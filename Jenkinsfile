@@ -5,6 +5,7 @@ def configMap = [
     component: "shipping",
     project: "roboshop"
 ]
+
 echo "test:"
 if( ! env.BRANCH_NAME.equalsIgnoreCase('main')){
     javaEKSPipeline(configMap)
